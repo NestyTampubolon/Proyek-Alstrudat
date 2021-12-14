@@ -1,0 +1,3 @@
+JKT|Jakarta|
+BDG|Bandung|
+BLG|Balige|
