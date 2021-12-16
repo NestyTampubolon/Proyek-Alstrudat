@@ -123,13 +123,9 @@ void loginMahasiswa(){
        					printf("Tidak ada dalam pilihan");
        					break;
 				   }
-       	
-       		
-       		
         		system("PAUSE");
 				break;
-			}
-                
+			}            
       }
   }
     fclose(wrote);
@@ -192,8 +188,6 @@ void loginAdmin(){
        					break;
 				   }
        	
-       		
-       		
         		system("PAUSE");
 				break;
 			}
@@ -286,100 +280,6 @@ void kelolaakunbyadmin()
 	    
     }
     
-//    
-//void tambahkota(){
-//	int pilihan;
-//
-//	system("cls");
-//			kota *k;
-//			FILE *city, *city1;
-//			int n,i,j;
-//			
-//			k = (kota*)malloc(100*sizeof(kota));
-//			city = fopen("kota.txt","a+");
-//			
-//			printf("#TAMBAH DATA KOTA#\n\n");
-//			for(i=0;i<1;i++){
-//				printf("Tambah Kota : ");
-//				fflush(stdin);
-//			    scanf("%s %s",k[i].kode,k[i].namaKota);
-//			    fwrite(k+i,sizeof(kota),1,city);
-//			}
-//	    
-//	    fclose(city);	
-//
-//	printf("----------------------------------------------------------------------\n");
-//	printf("Kota Berhasil Ditambahkan / Kota Gagal Ditambahkan\n");
-//	printf("1. Tambah Data Kota\n");
-//	printf("2. Lihat Data Kota\n");
-//	printf("3. Edit Data Kota\n");
-//	printf("99. Menu Utama\n\n");
-//	printf("Pilihan : ");
-//	scanf("%d",pilihan);
-//	switch(pilihan){
-//		case 1:
-//			break;
-//		case 2:
-//			break;
-//		case 3:
-//			break;
-//		case 99 :
-//			break;
-//	}
-//	
-//}
-
-//void lihatkota(){
-//	char nomor[5];
-//	char nama[100], kode[100];
-//    FILE *fp;
-//	fp = fopen("kota.txt","r");
-//  
-//	printf("#LIHAT DATA KOTA#\n\n");
-//	printf("Data Lengkap Kota\n");
-//	printf("------------------------------------------------------------------------------------------------------------\n");
-//	printf("No\t\tKode Kota\t\tNama Kota\n");
-//	
-//
-//	while((fscanf(fp,"%[^|]|%[^|]|\n",&kode,&nama)) != EOF) { 
-//		fscanf(fp,"%[^|]|%[^|]|\n",&kode,&nama);
-//		//fscanf(fp,"%d;%[^|];%[^|];\n",&kota.nomor,&kota.kode_kota,&kota.nama_kota);
-//		printf("%s\t\t%s\t\t%s\n",nomor,kode,nama);
-//	}
-//	  fclose(fp);
-//}
-//
-//void kelolakota()
-//{
-//	int pilihan;
-//	printf("#KELOLA KOTA#\n");
-//
-//	printf("1. Tambah Data Kota\n");
-//	printf("2. Lihat Data Kota\n");
-//	printf("3. Edit Data Kota\n");
-//	printf("4. Delete Data Kota\n");
-//	printf("99. Menu Utama\n\n");
-//	
-//	printf("Pilihan : ");
-//	scanf("%d",pilihan);
-//	switch(pilihan){
-//		case 1 :
-//			tambahkota();
-//			break;
-//		case 2 : 
-//			lihatkota();
-//			break;
-//		case 3 : 
-//			break;
-//		case 4 : 
-//			break;
-//		case 99 : 
-//			break;
-//		default :
-//			printf("Tidak ada pilihan");
-//			kelolakota();
-//	}
-//}
 
 void kelolarute(){
 	int pilihan;
@@ -409,25 +309,25 @@ void kelolarute(){
 
 
 void kelolakota(){
-	int pilih5;
+	int pilihan;
 	do{
 	system("cls");
-	printf("========KELOLA KOTA========\n");
+	printf("#KELOLA KOTA#\n");
 	printf("1. Tambah Data Kota\n");
 	printf("2. Lihat Data Kota\n");
 	printf("3. Edit Data Kota\n");
 	printf("4. Delete Data Kota\n");
 	printf("5. Menu Utama\n");
 	printf("\nPilihan : ");
-	scanf("%d",&pilih5);
-	if(pilih5>5){
+	scanf("%d",&pilihan);
+	if(pilihan>5){
 		system("cls");
             printf("INPUT SALAH, COBA LAGI!!\n");
-	}switch(pilih5){
+	}switch(pilihan){
 		case 1:
 			
 			system("cls");
-			printf("======TAMBAH DATA KOTA======\n");
+			printf("#TAMBAH DATA KOTA#\n");
 			kota *k;
 			FILE *city, *city1;
 			int n,i,j;
@@ -577,6 +477,8 @@ void kelolakota(){
 	}
 	}while(again == 'y');	
 }
+
+
 
 
 
